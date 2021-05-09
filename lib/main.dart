@@ -492,25 +492,31 @@ class _PortfolioState extends State<Portfolio> {
                               ),
                               Expanded(
                                 flex: 2,
-                                child: Container(
-                                  alignment: Alignment.center,
-                                  child: Text(
-                                    'Browse my projects',
-                                    style: TextStyle(
-                                        fontSize: 24,
-                                        fontFamily: 'LT Amber',
-                                        letterSpacing: .75,
-                                        fontWeight: FontWeight.w500),
+                                child: GestureDetector(
+                                  child: Container(
+                                    alignment: Alignment.center,
+                                    child: Text(
+                                      'Browse my projects',
+                                      style: TextStyle(
+                                          fontSize: 24,
+                                          fontFamily: 'LT Amber',
+                                          letterSpacing: .75,
+                                          fontWeight: FontWeight.w500),
+                                    ),
+                                    decoration: BoxDecoration(
+                                        color: Color(0xffB6244F),
+                                        borderRadius: BorderRadius.all(
+                                          Radius.circular(16.0),
+                                        )),
+                                    height: double.infinity,
+                                    margin: EdgeInsets.only(
+                                        left: 24,
+                                        top: 32,
+                                        right: 24,
+                                        bottom: 20),
+                                    width: double.infinity,
                                   ),
-                                  decoration: BoxDecoration(
-                                      color: Color(0xffB6244F),
-                                      borderRadius: BorderRadius.all(
-                                        Radius.circular(16.0),
-                                      )),
-                                  height: double.infinity,
-                                  margin: EdgeInsets.only(
-                                      left: 24, top: 32, right: 24, bottom: 20),
-                                  width: double.infinity,
+                                  onTap: null,
                                 ),
                               ),
                             ],
